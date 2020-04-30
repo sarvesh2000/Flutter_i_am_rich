@@ -19,8 +19,9 @@ void main() {
           child: Image(
             //becomes child of center widget
             //body is the main content of our app. Image is a widget used to hold images
-            image: NetworkImage(
-                'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'), //NetworkImage loads an image from an URL.
+            image: AssetImage(
+                //AssetImage loads an image from the folders specified in the pubspec.yaml file assets section.
+                'images/diamond.png'),
           ),
         ),
       ),
